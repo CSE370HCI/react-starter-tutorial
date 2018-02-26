@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Part 1
+## Creating a new Android Project
 
-You can use the [editor on GitHub](https://github.com/TristanWiley/android-starter-tutorial/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+First we'll need to create a new project. We'll start by heading to `File -> New -> New Project`
+![New Project](https://i.imgur.com/phqFnvE.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This will pop open a new dialog to help you start your project. In the future, you can use a template to make more complex/advanced views. However, we'll be doing it simple.
 
-### Markdown
+First, pick out a name and "Company Domain" this is simply a package name. You can name your project whatever you'd like, and the company domain should generally be in a something.com format. This will generate your package name (com.something.yourproject).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![Naming the project](https://i.imgur.com/UO18M77.jpg)
+Note: We're unchecking C++ and Kotlin support since we'll be writing this in Java.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+We can leave the defaults for the "Target Android Version" since API level 15 is the recommended amount.
+![Version Details](https://i.imgur.com/tF7VUKS.jpg)
 
-- Bulleted
-- List
+After, we'll pick "Empty Activity". This will create a basic activity with nothing in it.
+![Template](https://i.imgur.com/ySmEBV6.jpg)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TristanWiley/android-starter-tutorial/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Finally, we can leave the default name for our activity. Then click 
