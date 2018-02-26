@@ -18,3 +18,5 @@ In the `res` directory we'll contain all resources. This includes layouts, image
 > layout -> All of the layouts for our activities  
 > mipmap -> Images  
 > values -> Strings, colors, and styles (oh my)
+
+[*GO TO PART 3 ->*](part3.html)
