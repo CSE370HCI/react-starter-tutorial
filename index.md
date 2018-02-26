@@ -20,4 +20,4 @@ After, we'll pick "Empty Activity". This will create a basic activity with nothi
 
 Finally, we can leave the default name for our activity. Then click finish and Android Studio will create our project.
 
-[*GO TO PART 2 ->*](/part2.html)
+[*GO TO PART 2 ->*](part2.html)
