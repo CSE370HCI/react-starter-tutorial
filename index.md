@@ -19,3 +19,5 @@ After, we'll pick "Empty Activity". This will create a basic activity with nothi
 ![Template](https://i.imgur.com/ySmEBV6.jpg)
 
 Finally, we can leave the default name for our activity. Then click finish and Android Studio will create our project.
+
+[*GO TO PART 2 ->*](/part2.html)
