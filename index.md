@@ -18,4 +18,4 @@ We can leave the defaults for the "Target Android Version" since API level 15 is
 After, we'll pick "Empty Activity". This will create a basic activity with nothing in it.
 ![Template](https://i.imgur.com/ySmEBV6.jpg)
 
-Finally, we can leave the default name for our activity. Then click 
+Finally, we can leave the default name for our activity. Then click finish and Android Studio will create our project.
