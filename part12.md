@@ -63,7 +63,7 @@ These are all functions we can use to update and store notes. The `setNote` meth
 ## Creating the View
 When we created this new activity, a layout file was automatically generated. Open up the res->layout->`activity_note.xml` layout.
 
-Here's the layout we'll use for this tutorial. It contains and `ImageView` and two `TextView` elements. We'll use these to pick our note image, title, and description. As well as a button for creating a note.
+Here's the layout we'll use for this tutorial. It contains and `ImageView` and two `TextView` elements. We'll use these to pick our note image and title. As well as a button for creating a note.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,6 @@ Here's the layout we'll use for this tutorial. It contains and `ImageView` and t
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/note_description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,17 +94,6 @@ Here's the layout we'll use for this tutorial. It contains and `ImageView` and t
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/note_image"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/note_description"
-        android:layout_width="282dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Note Description"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/note_image"
-        app:layout_constraintTop_toBottomOf="@+id/note_title" />
 
     <Button
         android:id="@+id/create_note"

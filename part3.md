@@ -21,8 +21,7 @@ You should see the following code (or something very similar)
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.tristanwiley.cse410.MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
