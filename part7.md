@@ -27,4 +27,13 @@ This is a ListView, it fills the whole view and has an id of note_list. The ID i
 
 If you run this project now, you'll see nothing, since it's an empty list.
 
+## ONE LAST THING!
+One last thing! We need to tell our app that it wants permission to write to the external storage of our app. We'll need this for when start storing images.
+
+To do so, we need to open up our `AndroidManifest.xml` file in our src->main package. Right above the `<application>` tag (or right below the start of the `<manifest` tag), add the following line. 
+
+```
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
 [Head to part 8 to learn how to add items to a list -->](part8.html)
