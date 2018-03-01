@@ -29,9 +29,7 @@ public void loadNotesFromDatabase() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Toast.makeText(getApplicationContext(), String.valueOf(id), Toast.LENGTH_LONG).show();
-//                Intent openNote = new Intent(MainActivity.this, NoteActivity.class);
-//                openNote.putExtra("noteId", id);
-//                startActivity(openNote);
+            //TODO Something
         }
     });
 
