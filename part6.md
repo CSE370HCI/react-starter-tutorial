@@ -6,6 +6,8 @@ In normal Java programs debugging is just looking at the console output. Android
 Look at the bottom of Android Studio, you'll see a few panes, one will say Logcat.
 ![Logcat](https://i.imgur.com/UdpjgcW.jpg)
 
+> Note: If you don't see the LogCat by default, you can show it by either going to `View -> Tool Windows -> Logcat` or simply pressing `Alt+6`.
+
 The LogCat is where the output of your app will go (and all other apps, if unfiltered).
 
 ### Some quick notes:

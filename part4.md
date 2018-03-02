@@ -19,6 +19,22 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
+## Before we continue
+Before we continue, we should add a quick method to our MainActivity, this will ensure that our database doesn't crash our app when we close the app.
+
+```
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    // Close database cursor
+    if (todoCursor != null) {
+        todoCursor.close();
+    }
+}
+```
+
+**Continuing**
+
 The first few lines are pretty ordinary, our package name and import statements. We have our MainActivity class that extends [AppCompatActivity](https://developer.android.com/reference/android/support/v7/app/AppCompatActivity.html) which is essentially an Android activity that's compatible with previous versions.
 
 Next, we have an Overriden `onCreate` function. This is what gets called whenever our app's activity is first created. 
