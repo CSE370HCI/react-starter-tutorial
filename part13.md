@@ -1,4 +1,5 @@
-# The code to create a new Note
+# Part 13
+## The code to create a new Note
 
 Alright, we now have two activities with their appropriate layouts and we have some methods that will allow us to create notes. Let's hook it all together.
 
@@ -40,4 +41,8 @@ Right now, we're leaving the image and description empty. The description will b
 
 For some help implementing refreshing, go here [Refreshing Tutorial - Assignment Part](refreshing.html).
 
-We'll now see something in our list! Finally!
+We'll now see something in our list! Finally! Here's what you should see after making a note.
+
+![Our app](https://i.imgur.com/x9ibQTZ.png)
+
+[Next, let's add image support](part14.html)

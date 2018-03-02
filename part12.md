@@ -1,4 +1,4 @@
-# Part 11
+# Part 12
 ## Going from one Activity to Another
 
 We need another Activity that will let us create a note. We can create a new activity by right clicking on our package (inside our java directory), New -> Activity -> Empty Activity

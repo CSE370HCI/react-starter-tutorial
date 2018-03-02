@@ -24,15 +24,6 @@ Next we'll create a function that connects our ListView, Adapter, and Database a
 
 ```
 public void loadNotesFromDatabase() {
-    // This is how we set what we want to do when you click on an item in the List
-    noteList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Toast.makeText(getApplicationContext(), String.valueOf(id), Toast.LENGTH_LONG).show();
-            //TODO Something
-        }
-    });
-
     // Create a new instance of the NoteTakingDatabase
     NoteTakingDatabase handler = new NoteTakingDatabase(getApplicationContext());
     // Get the writable database
