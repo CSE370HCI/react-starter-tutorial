@@ -48,3 +48,5 @@ finish();
 ```
 
 That will either update or store the note, and then close that `Activity` and return you to the `MainActivity`.
+
+[Head. To. The. Conclusion! You made it! ->](conclusion.html)
