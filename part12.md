@@ -22,13 +22,13 @@ int noteId;
 These are all things we'll need, now **copy and paste** the following methods.
 
 ```
-private void updateNote(int noteId, String imagePath, String title, String description) {
+private void updateNote(int noteId, String imagePath, String title, String description, String category) {
     // Create a new instance of the NoteTakingDatabase
     NoteTakingDatabase handler = new NoteTakingDatabase(getApplicationContext());
     // Get the writable database
     SQLiteDatabase db = handler.getWritableDatabase();
     // Store the note in the database
-    handler.updateNote(db, noteId, imagePath, title, description);
+    handler.updateNote(db, noteId, imagePath, title, description, category);
 }
 
 private void setNote(Integer noteId) {
@@ -45,16 +45,19 @@ private void setNote(Integer noteId) {
     String noteText = cursor.getString(cursor.getColumnIndexOrThrow("noteText"));
     noteTitle.setText(noteText);
 
+    String noteDescription = cursor.getString(cursor.getColumnIndexOrThrow("noteDescription"));
+    String noteCategory = cursor.getString(cursor.getColumnIndexOrThrow("noteCategory"));
+
     cursor.close();
 }
 
-public void storeNote(String path, String title, String description) {
+public void storeNote(String path, String title, String description, String category) {
     // Create a new instance of the NoteTakingDatabase
     NoteTakingDatabase handler = new NoteTakingDatabase(getApplicationContext());
     // Get the writable database
     SQLiteDatabase db = handler.getWritableDatabase();
     // Store the note in the database
-    handler.storeNote(db, path, title, description);
+    handler.storeNote(db, path, title, description, category);
 }
 ```
 

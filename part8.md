@@ -8,8 +8,6 @@ Meanwhile, the `CursorAdapter` can be used with a ListView to display the conten
 First right click on your package and create a new Java class. 
 We'll name this `NoteTakingDatabase`.
 ```
-package tristan.cse.cse410tutorial;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -24,30 +22,32 @@ public class NoteTakingDatabase extends SQLiteOpenHelper {
     private String DATABASE_NAME = "notes";
 
     NoteTakingDatabase(Context context) {
-        super(context, "NOTES_DATABASE", null, 2);
+        super(context, "NOTES_DATABASE", null, 3);
     }
 
     // This is where we need to write create table statements.
     // This is called when database is created.
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE notes(_id INTEGER PRIMARY KEY, noteImage TEXT, noteText TEXT, noteDescription TEXT)");
+        db.execSQL("CREATE TABLE notes(_id INTEGER PRIMARY KEY, noteImage TEXT, noteText TEXT, noteDescription TEXT, noteCategory TEXT)");
     }
 
-    void storeNote(SQLiteDatabase db, String path, String text, String description) {
+    void storeNote(SQLiteDatabase db, String path, String text, String description, String category) {
         ContentValues values = new ContentValues();
         values.put("noteImage", path);
         values.put("noteText", text);
         values.put("noteDescription", description);
+        values.put("noteCategory", category);
 
         db.insert(DATABASE_NAME, null, values);
     }
 
-    void updateNote(SQLiteDatabase db, Integer id, String path, String text, String description) {
+    void updateNote(SQLiteDatabase db, Integer id, String path, String text, String description, String category) {
         ContentValues values = new ContentValues();
         values.put("noteImage", path);
         values.put("noteText", text);
         values.put("noteDescription", description);
+        values.put("noteCategory", category);
 
         db.update(DATABASE_NAME, values, "_id=?", new String[]{String.valueOf(id)});
     }
@@ -111,11 +111,15 @@ public class NoteAdapter extends CursorAdapter {
         Bitmap bitmap = BitmapFactory.decodeFile(path);
 
         // Get the note text from the database as a String
-        String text = cursor.getString(cursor.getColumnIndexOrThrow("noteText"));
+        String title = cursor.getString(cursor.getColumnIndexOrThrow("noteText"));
+
+        String description = cursor.getString(cursor.getColumnIndexOrThrow("noteDescription"));
+
+        String category = cursor.getString(cursor.getColumnIndexOrThrow("noteCategory"));
 
         // Populate fields with properties from database
         noteImage.setImageBitmap(bitmap);
-        noteText.setText(text);
+        noteText.setText(title);
     }
 }
 ```
@@ -128,6 +132,6 @@ When inserting this code we will have some errors, that is okay. We'll address t
 
 The constructor can be left as the default. Meanwhile, the method `newView` connects our adapter to a view we'll create in the next part of this tutorial.
 
-Finally, the `bindView` method is where we access our database, get values, and set them to our view.
+Finally, the `bindView` method is where we access our database, get values, and set them to our view. When you're customizing your view, you can access elements from your `note_list_item` layout in `bindView`.
 
 [Let's create our item view! -->](part9.html)
