@@ -25,6 +25,7 @@ startActivity(openNote);
 
 This will open the `NoteActivity` when you click on any item, but we need to handle it on the other side. Let's now open up our `NoteActivity` activity and check to see if there exists a noteId. If there is, then we know we're supposed to be editing it.
 
+We'll put this snippit in our `onCreate` after setting the database (`db = handler.getWritableDatabase();`) and after setting your layout elements (`findViewById` lines).
 ```
 Bundle extras = getIntent().getExtras();
 if (extras != null) {
