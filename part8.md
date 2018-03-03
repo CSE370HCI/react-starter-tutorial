@@ -68,7 +68,7 @@ public class NoteTakingDatabase extends SQLiteOpenHelper {
 }
 ```
 
-This file is our database file. It manages the creation, removal, updating, and deleting (CRUD) of our databas.e
+This file is our database file. It manages the creation, removal, updating, and deleting (CRUD) of our database.
 
 Next we need to create our Adapter. This we'll look at more closely.
 
@@ -78,6 +78,17 @@ Now let's create our Adapter. This adapter will extend `CursorAdapter` so we can
 Now let's create the following class called `NoteAdapter`.
 
 ```
+import android.content.Context;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CursorAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 public class NoteAdapter extends CursorAdapter {
     public NoteAdapter(Context context, Cursor c, int flags) {
         super(context, c, flags);
@@ -108,6 +119,10 @@ public class NoteAdapter extends CursorAdapter {
     }
 }
 ```
+
+> If you are ever missing imports from your class, you can use the shortcut Ctrl+Alt+O to automatically optimize imports. 
+
+When inserting this code we will have some errors, that is okay. We'll address those in the next section.
 
 > Note: We can have Android Studio auto import all required methods when initially creating a class. If we have a class that extends something and alt+enter on the erroring first line, we can import them with default values.
 

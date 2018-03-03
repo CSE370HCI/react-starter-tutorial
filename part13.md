@@ -13,9 +13,9 @@ db = handler.getReadableDatabase();
 ```
 As usual, we need to get references to our `ImageView`, `EditText`, and `Button`. So we'll use `findViewById` to get those references. This will all go in our onCreate.
 ```
-saveNote = findViewById(R.id.create_note);
-noteTitle = findViewById(R.id.note_title);
-noteImage = findViewById(R.id.note_image);
+saveNote = (Button) findViewById(R.id.create_note);
+noteTitle = (TextView) findViewById(R.id.note_title);
+noteImage = (ImageView) findViewById(R.id.note_image);
 ```
 
 Now we have our elements defined and can use them. Let's handle a button click! We called our button `saveNote` so we can type `saveNote.se`... and at this point Android Studio will most likely suggest `setOnClickListener`, if it does, press enter, then inside the parenthesis type `new OnClickListener` and again, Android Studio will most likely autosuggest this. If it does, press enter again and Android Studio will autofill your needed code.

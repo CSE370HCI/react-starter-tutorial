@@ -15,8 +15,11 @@ Next we'll reference our `ListView` from our activity. We do this by using a met
 Below `setContentView` add the following line.
 
 ```
-noteList = findViewById(R.id.note_list);
+noteList = (ListView) findViewById(R.id.note_list);
 ```
+
+> Note: When using `findViewById` we need to cast the `View` to whatever type of View element it is, in this case a `ListView`. In newer version of the Android SDK this cast is not required. Android Studio will tell you if that's the case.
+
 This code will now let us use noteList and have the changes reflected in our UI.
 
 #
