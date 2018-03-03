@@ -9,9 +9,9 @@ Because of that, we need to ask for permission to access the user's files, this 
 
 For simplicity, we'll simply ask for permission when the user loads the notes. 
 
-In your `MainActivity` under `onCreate` we have a line called `loadNotesFromDatabase();`, we'll be replacing that.
+In your `MainActivity` under `onCreate` we have a line called `loadNotesFromDatabase();`, we'll be adding a conditional (if statement) around that.
 
-1. We'll need to check if the user has permission, you can copy and paste the following method
+1. Before we do that, we'll need to check if the user has permission. You can copy and paste the following method
     ```
     public boolean userHasPermission() {
         return ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;

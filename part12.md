@@ -82,10 +82,10 @@ Here's the layout we'll use for this tutorial. It contains and `ImageView` and t
         android:id="@+id/note_image"
         android:layout_width="66dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

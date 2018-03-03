@@ -34,15 +34,15 @@ if (extras != null) {
 }
 ```
 
-The snippit will get the `Intent` extras we sent along with the request. If there are extrasa, we get the noteId and set it to a variable, then we pass it into the function `setNote` that sets all the values of our layout with the stored note's information.
+The snippit will get the `Intent` extras we sent along with the request. If there are extras, we get the noteId and set it to a variable, then we pass it into the function `setNote` that sets all the values of our layout with the stored note's information.
 
 Finally, one more thing we need to do. Previously we just had a single line when you clicked "Create Note", now we'll add some logic to either Create or Update a note. You can replace the line `storeNote("", noteTitle.getText().toString(), "");` with the following.
 
 ```
 if (!isUpdate) {
-    storeNote(imagePath, noteTitle.getText().toString(), "");
+    storeNote(imagePath, noteTitle.getText().toString(), "Description", "Category");
 } else {
-    updateNote(noteId, imagePath, noteTitle.getText().toString(), "");
+    updateNote(noteId, imagePath, noteTitle.getText().toString(), "Description", "Category");
 }
 finish();
 ```

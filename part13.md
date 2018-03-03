@@ -35,9 +35,11 @@ saveNote.setOnClickListener(new View.OnClickListener() {
 
 Now, anything we put inside the onClick function will run when the `Button` is clicked. Let's put the following code inside.
 
-`storeNote("", noteTitle.getText().toString(), "");`
+`storeNote(imagePath, noteTitle.getText().toString(), "", "");`
 
-Right now, we're leaving the image and description empty. The description will be an exercise for you and the image will come later. Let's run this, put something in the title, and click save. Since we haven't implemented refreshing we'll need to close the app and reopen it.
+Right now, we're leaving the description and category empty. The description and category will be an exercise for you. Let's run this, put something in the title, and click "Create Note". Since we haven't implemented refreshing we'll need to close the app and reopen it. 
+
+> Note: If you're unfamiliar with Android devices, press the back arrow twice, then click on the app from the app drawer (swipe up from the bottom app row). 
 
 For some help implementing refreshing, go here [Refreshing Tutorial - Assignment Part](refreshing.html).
 

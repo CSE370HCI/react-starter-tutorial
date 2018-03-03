@@ -3,7 +3,7 @@
 
 To add all the functionality we want for images, we'll be using a library to make our lives easier. Adding a library in Android is incredibly easy. In our case we need to add two lines to two files.
 
-There are two `build.gradle` files. Open both of them, one should show up as "app" and one should show up as the name of your project.
+There are two `build.gradle` files. You can find these in the Gradle Scripts menu. Open both of them, one should show up as "app" and one should show up as the name of your project.
 
 In the one that shows up as the name of your project there should be a parameter with the following in it:
 ```
@@ -17,7 +17,7 @@ allprojects {
 
 Right under `jcenter()` add the following line `maven { url 'https://jitpack.io' }`. This will make it so you can use the package we need.
 
-In the other `build.gradle` file, there's a list of dependencies that start with `implementation`. Under one of them add the following line.
+In the other `build.gradle` file, there's a list of dependencies under a dependency section. Insert the following line at the end of the dependency section.
 
 ```
 implementation 'com.github.jkwiecien:EasyImage:1.3.1'
