@@ -11,7 +11,7 @@ First let's open the "Design" section, we see something like this.
 
 Let's break this apart. On the left side we see a Palette. These contain all the different types of inputs, text, views, layouts etc. Right now, we're defaulted with a TextView. Let's start with that and go from there.
 
-Below the Pallete we see a "Component Tree", this shows us what's in our current Activity. Like I said, we have a TextView inside a "ConstraintLayout". ConstraintLayout is a new layout from Google that allows all elements to be constrained in the view somewhat relative to their surroundings.
+Below the Pallete we see a "Component Tree", this shows us what's in our current Activity. We have a `TextView` inside a `ConstraintLayout`. The ConstraintLayout is a new layout from Google that allows all elements to be constrained in the view somewhat relative to their surroundings.
 
 ## XML view
 Now let's switch to the XML view by clicking the "Text" button in the bottom toolbar.
@@ -40,6 +40,8 @@ You should see the following code (or something very similar)
 
 I'll break down this code really quickly. The parent element is a `ConstraintLayout`. This layout is relatively new and makes it easy to create apps that look good on all sized devices. 
 
-Inside the `ConstraintLayout` we have a `TextView`. It functions exactly as you'd expect, it's purpose is to display text (in our case, "Hello World"). Each element has different parameters such as `layout_width` and `layout_height` (where `wrap_content` and `match_parent` are the most common values).
+The `TextView` functions exactly as you'd expect, it's purpose is to display text (in our case, "Hello World"). Each element has different parameters such as `layout_width` and `layout_height` (where `wrap_content` and `match_parent` are the most common values).
+
+> Note: The `ConstraintLayout` is an example of a ViewGroup, while the `TextView` is a view. You can think of a ViewGroup as a type of container, it can have child views. [This image demonstrates the concept pretty well](https://i.stack.imgur.com/KSCNf.png).
 
 [*GO TO PART 4 ->*](part4.html)

@@ -22,7 +22,6 @@ noteList = (ListView) findViewById(R.id.note_list);
 
 This code will now let us use noteList and have the changes reflected in our UI.
 
-#
 Next we'll create a function that connects our ListView, Adapter, and Database all together. Copy and paste the following function into your MainActivity.
 
 ```
@@ -44,5 +43,20 @@ public void loadNotesFromDatabase() {
 You can reference the comments for a line by line explanation of what this does. But essentially. It selects all of the notes from our database, passes that database cursor to our adapter, and sets the adapter of our ListView so it will show the notes.
 
 Now, all we need to do is add `loadNotesFromDatabase();` right after we declare the `ListView` in our `onCreate` and our code should function!
+
+
+## One quick note
+Before we continue, we should add a quick method to our MainActivity, this will ensure that our database doesn't crash our app when we close the app.
+
+```
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    // Close database cursor
+    if (todoCursor != null) {
+        todoCursor.close();
+    }
+}
+```
 
 [Head to Part 11! -->](part11.html)
