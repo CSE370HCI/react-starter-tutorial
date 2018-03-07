@@ -19,7 +19,7 @@ In your `MainActivity` under `onCreate` we have a line called `loadNotesFromData
     ```
     and then create an if statement. If true, the user has permission, if false, we need to request it.
 
-2. If the user does have permission, we can let use `loadNotesFromDatabase();` like before.
+2. If the user does have permission, we can use `loadNotesFromDatabase();` like before.
 3. If the user does not have permission, we'll need an extra line
     ```
     ActivityCompat.requestPermissions(MainActivity.this,
