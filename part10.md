@@ -42,7 +42,7 @@ public void loadNotesFromDatabase() {
 ```
 You can reference the comments for a line by line explanation of what this does. But essentially. It selects all of the notes from our database, passes that database cursor to our adapter, and sets the adapter of our ListView so it will show the notes.
 
-**Now, all we need to do is add `loadNotesFromDatabase();` right after we declare the `ListView` in our `onCreate` and our code should function!**
+Now, all we need to do is add `loadNotesFromDatabase();` right after we declare the `ListView` in our `onCreate` and any notes in our database will populate into our ListView!
 
 
 ## One quick note
