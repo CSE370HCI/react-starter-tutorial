@@ -44,7 +44,6 @@ You can reference the comments for a line by line explanation of what this does.
 
 Now, all we need to do is add `loadNotesFromDatabase();` right after we declare the `ListView` in our `onCreate` and any notes in our database will populate into our ListView!
 
-
 ## One quick note
 Before we continue, we should add a quick method to our MainActivity, this will ensure that our database doesn't crash our app when we close the app.
 
