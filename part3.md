@@ -38,7 +38,7 @@ You should see the following code (or something very similar)
 </android.support.constraint.ConstraintLayout>
 ```
 
-I'll break down this code really quickly. The parent element is a `ConstraintLayout`. This layout is relatively new and makes it easy to create apps that look good on all sized devices. 
+I'll break down this code really quickly. The parent element is a `ConstraintLayout`. This layout type makes it easy to create apps that look good on all sized devices by setting constraints on child elements. 
 
 The `TextView` functions exactly as you'd expect, it's purpose is to display text (in our case, "Hello World"). Each element has different parameters such as `layout_width` and `layout_height` (where `wrap_content` and `match_parent` are the most common values).
 

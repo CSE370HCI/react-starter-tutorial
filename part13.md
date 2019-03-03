@@ -11,6 +11,8 @@ NoteTakingDatabase handler = new NoteTakingDatabase(getApplicationContext());
 // Get the writable database
 db = handler.getReadableDatabase();
 ```
+> This code will get the app's database instance and store it in the `db` variable for us to use in this activity.
+
 As usual, we need to get references to our `ImageView`, `EditText`, and `Button`. So we'll use `findViewById` to get those references. This will all go in our onCreate.
 ```
 saveNote = (Button) findViewById(R.id.create_note);

@@ -1,7 +1,7 @@
 # Part 10
 ## Connecting it all together
 
-Now let's put it all together! We should now have a database and adapter all set up without errors, we just need to implement them! Let's start by heading over to our MainActivity class.
+Now let's put it all together! We should now have a database and adapter all set up without errors, we just need to implement them! Let's start by heading over to our `MainActivity` class.
 
 First let's add some global variables to our class. Add the following variables to the top of your class.
 

@@ -6,7 +6,7 @@ Now is one of the most important steps, actually running our project. We have tw
 Running the project on a device is the most ideal since it's fastest and has the advantage of physical hardware.
 
 To run our app we can look up to the toolbar and see the green arrow, clicking on it will give us a dialog looking like so.
-![Device dialog](https://i.imgur.com/IXbNd3P.jpg)
+![Device dialog](https://i.imgur.com/wBZ3NS3.jpg)
 
 If you do not have a device plugged in you won't see your device. To ensure you see it make sure that you have "USB Debugging" turned on
 
