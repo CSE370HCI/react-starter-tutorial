@@ -1,20 +1,37 @@
 # Part 1
-## Creating a new Android Project
+## Getting Started
 
-First we'll need to create a new project. We'll start by heading to `File -> New -> New Project`
-![New Project](https://i.imgur.com/phqFnvE.jpg)
+This tutorial has been adapted from [w3schools.com’s React Tutorial](https://www.w3schools.com/REACT/default.asp) to suit UB CSE’s 370 course (Human Computer Interaction).
 
-This will pop open a new dialog to help you start your project. In the future, you can use a template to make more complex/advanced views. However, we'll be creating a simple application here.
+You can access a full demo application for the course by visiting the [Conclusion](conclusion.html) of this tutorial.
 
-First, we'll be picking the "Empty Activity" view for our project. This will create a basic activity with nothing in it.
-![Template](https://i.imgur.com/TGnaOZW.jpg)
+### Technical Setup
+We will be using Node.js and NPM (Node Package Manager) to setup and run our project. You can find [installation instructions here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-Next, pick out a name and a "Package Name". The package name is simply a unique identifier for the app store and your device. You can name your project whatever you'd like
+Once we have NPM installed, we can use the `create-react-app` tool to get started! Open up a terminal and run the following command:
 
-Make sure Java is selected (unless your team decides to use Kotlin) and continue. (You can leave the default Minimum API level)
+```
+npx create-react-app my-social-media-site
+```
 
-![Naming the project](https://i.imgur.com/rBz2llJ.jpg)
+You can replace `my-social-media-site` with whatever you would like to call your project. By running this command, a directory with a starter React application will be created.
 
-Finally, click finish and Android Studio will create our project.
+
+### Starting Our App
+Now that we've created a new React app, we can start it using `npm`!
+
+First, navigate to the new React application's directory by running the following command:
+
+```
+cd my-social-media-site
+```
+
+Once inside the directory, we can start our React app by running
+
+```
+npm start
+```
+
+This will open up a new browser window with our webpage (hosted at `localhost:3000` by default). Any time we make changes to our code while `npm start` is running, the webpage should update!
 
 [*GO TO PART 2 ->*](part2.html)

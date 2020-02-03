@@ -1,32 +1,58 @@
 # Part 4
-## The Java Files
+## React State
 
-Now let's look at our `MainActivity.java`. This is already connected to our XML file so we don't need to do that manually. Right now our code looks like this:
+React Component's have a built in state. This state can be updated by using `this.setState()`. Whenever a component's state is updated, it will re-render the component. This ensures your component is always up-to-date with it's current state.
+
+Let's create a simple component that allows the user to click a button to increment a number, then let's display that number on the page. Because we are going to be using a state, we'll want to have a Class component.
+
+Let's start by replacing our `App.js` with a new component. We can start with the following code in `App.js`.
 
 ```
-package com.tristanwiley.cse410;
+// We need to import React so we can create a React component
+import React from 'react';
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+// Here is how we will create a new Class component. Named App.
+class App extends React.Component {
+    // The constructor is run when the component is first created
+    constructor() {
+        super();
 
-public class MainActivity extends AppCompatActivity {
+        // This is our initial state for our component. Notice `count` is defaulted to 0.
+        this.state = {
+            count: 0
+        };
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        this.incrementCounter.bind(this);
+    }
+
+    // here we create a new method to add one to our state
+    incrementCounter() {
+        // get the old count
+        const count = this.state.count;
+
+        // set the count in our state to count+1
+        this.setState({
+            count: count+1
+        });
+    }
+
+    // `render` is called every time our state changes. So every time we update it
+    render() {
+        const count = this.state.count;
+
+        // return the current count in JSX to be displayed on the page
+        // also display a button that will call incrementCounter()
+        return (
+            <div>
+                <h1>The current count is {count}</h1>
+                <button onClick={() => this.incrementCounter()}>Increment Counter</button>
+            </div>
+        );
     }
 }
+
+export default App;
 ```
 
-The first few lines are pretty ordinary, our package name and import statements. We have our MainActivity class that extends [AppCompatActivity](https://developer.android.com/reference/android/support/v7/app/AppCompatActivity.html) which is essentially an Android activity that's compatible with previous versions.
-
-Next, we have an Overriden `onCreate` function. This is what gets called whenever our app's activity is first created. 
-
-> Note: Android has an odd lifecycle, if you're interested in learning more you can check out [this image](https://developer.android.com/guide/components/images/activity_lifecycle.png).
-
-Continuing, we have `setContentView(R.layout.activity_main)`. This connects with our `activity_main` layout that we were just looking at in [Part 3](part3.html).
-
-Now let's try running this!
 
 [*GO TO PART 5 ->*](part5.html)
