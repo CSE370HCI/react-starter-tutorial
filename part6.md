@@ -6,9 +6,11 @@ There are multiple ways to style your components. If you are familiar with web d
 For instance, if we wanted to set the background color of a `div` to #0090C1, we can do this by setting the `style` prop for the element.
 
 ```
-  <div style={{
-    backgroundColor: "0090C1"
-  }} />
+  <div style={
+    {
+      backgroundColor: "0090C1"
+    }
+  }></div>
 ```
 > Notice: The `style` prop takes in an Object with all of the element's styles. Rather than the CSS property being `background-color` as you might be familiar in CSS, it is written in camel case as `backgroundColor`.
 
@@ -41,5 +43,4 @@ Our users should now have a slightly more appealing style to them.
 
 [A more in depth discussion of component styling](https://www.w3schools.com/REACT/react_css.asp)
 
-**This is the conclusion of the tutorial**
-I highly recommend checking out the additional resources on the sidebar. If you are having any problems, please post on Piazza or come to office hours!
+[Head to the Conclusion ->](conclusion.html)
