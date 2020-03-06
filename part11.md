@@ -5,25 +5,39 @@
 Right now, the register component that we built just renders a div tag with the word "register" inside of it. We want to actually render a form that can be used to sign users up for this app. Below is some code which will render a simple html form.
 
 ```
+import React from 'react';
 
-const Register = () =>(
+import './register.css';
 
-    <div className="form">
-        <h1>Register</h1>
-        <form>
-        <label> Username</label>
-        <input type='text'></input>
-        <label> Email</label>
-        <input type='email'></input>
-        <label> Password</label>
-        <input type='password'></input>
-        <label> Verify Password</label>
-        <input type='username'></input>
-        <button>Submit</button>
-        </form>
-    </div>
+class Register extends React.Component{
+   
+    render(){
+        return (
 
-);
+            <div className="form">
+            <h1>Register</h1>
+            <form>
+            <label> Username</label>
+            <input type='text'></input>
+            <label> Email</label>
+            <input type='email'></input>
+            <label> Password</label>
+            <input type='password'></input>
+            <label> Verify Password</label>
+            <input type='username'></input>
+            <button>Submit</button>
+            </form>
+    
+    
+        </div>
+    
+        );
+    }
+   
+
+}
+
+export default Register;
 
 ```
 ![Form without CSS](/assets/img/registersansstyling.png)
