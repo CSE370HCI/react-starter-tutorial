@@ -1,8 +1,8 @@
-#Routing and Navigation
+# Routing and Navigation
 
-##Connecting the router to your navbar
+## Connecting the router to your navbar
 
-You might be familiar with the classic <a> tag from standard html. *react-router* uses something called a link tag to do exactly what an <a> tag does. In order to finish our navbar, we're going to need to add some link tags to the NavBar component. Head over to navbar.js and replace the stuff inside your <ul> tags to render the following:
+You might be familiar with the classic `<a>` tag from standard html. *react-router* uses something called a link tag to do exactly what an `<a>` tag does. In order to finish our navbar, we're going to need to add some link tags to the NavBar component. Head over to navbar.js and replace the stuff inside your `<ul>` tags to render the following:
 
 ```
           <nav>
