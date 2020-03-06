@@ -17,3 +17,5 @@ You might be familiar with the classic `<a>` tag from standard html. *react-rout
 Now, each list item will serve as a link. When the user clicks on a menu-item, a request will be made to render the component tied to the path specified.
 
 Now your navigation bar works as expected!! The next step to this app is building login and signup, so that's what we're going to build in the next section.
+
+[Part 11 ->](part11.html)

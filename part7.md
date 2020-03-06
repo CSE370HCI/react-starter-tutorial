@@ -47,3 +47,5 @@ export default App;
 ```
 
 For now, you will just see a simple list. That's fine. We're going to use CSS in the next section to make that look a lot prettier.
+
+[Part 8 ->](part8.html)

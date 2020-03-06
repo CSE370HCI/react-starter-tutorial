@@ -53,3 +53,5 @@ li:hover{
 `:hover` is an example of something called a selector. It allows you to selectively style elements only under certain conditions. In this case, we want to apply the background color only when the user hovers over the element with their cursor.
 
 Now our navbar is looking production ready stylistically, but it doesn't do anything. In the next section we're going to look at how to leverage React routing to create a working navbar.
+
+[Part 9 ->](part9.html)

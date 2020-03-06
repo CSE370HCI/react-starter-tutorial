@@ -57,3 +57,5 @@ At this point, things are going pretty well. Our input elements are listening fo
 
 
 Before we start sending data to the backend, we should probably do some frontend validation. In the next section we'll discuss how to accomplish this.
+
+[Part 13 ->](part13.html)

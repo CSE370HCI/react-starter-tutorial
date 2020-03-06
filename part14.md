@@ -27,4 +27,6 @@ There is a lot going on here, but don't get overwhelmed. Its not as complicated 
 {message: "Account created.  A confirmation email has been sent."}
 ```
 
-This is exciting news! We're gonna want to tell the user about it. There is no better way to accomplish this than with a modal. 
+This is exciting news! We're gonna want to tell the user about it. There is no better way to accomplish this than with a modal.
+
+[Head to the Conclusion ->](conclusion.html)

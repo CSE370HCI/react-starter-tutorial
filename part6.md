@@ -43,4 +43,4 @@ Our users should now have a slightly more appealing style to them.
 
 [A more in depth discussion of component styling](https://www.w3schools.com/REACT/react_css.asp)
 
-[Head to the Conclusion ->](conclusion.html)
+[Part 7 ->](part7.html)

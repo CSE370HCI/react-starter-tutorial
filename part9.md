@@ -40,3 +40,5 @@ So let's break this down. The Router tag is just a wrapper tag that Route tags m
 > Note: Make sure that the NavBar tag goes inside the router tag. We're going to add things to NavBar in the next section that need to be inside the Router tag.
 
 In the next section, we're going to look at how we can connect the navbar to the URLs, so that the menu items act as links.
+
+[Part 10 ->](part10.html)
